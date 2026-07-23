@@ -110,7 +110,7 @@ def initHeaders():
 def handleStatusCodes(status_code):
 	time.sleep(2)
 	global request_counter
-	print("\033[36mTarget: \033[38;5;5m" +str(random)+ " \033[38;5;4mstatus-code: \033[37m" +str(status_code)+ "\033[0m")
+	print("\033[36mGET: \033[38;5;5m" +str(url)+ " \033[38;5;4mstatus-code: \033[37m" +str(status_code)+ "\033[0m")
 	sys.stdout.write("\033[38;5;6mrequest-count: \033[37m\r%i\033[0m" % request_counter)
 	sys.stdout.flush()
 	if status_code == 429:
