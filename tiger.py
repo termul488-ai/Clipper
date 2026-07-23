@@ -41,7 +41,7 @@ logo = """
 faded_text = fade.fire(logo)
 print(faded_text)
 while attemps < 100:
-	print(f"\r\033[97m╔{'═' * 55}╗\033[0m")
+    print(f"\r\033[97m╔{'═' * 55}╗\033[0m")
     print(f"\r\033[97m╚{'═' * 55}╝\033[0m")
 
     
@@ -110,8 +110,8 @@ def initHeaders():
 def handleStatusCodes(status_code):
 	time.sleep(2)
 	global request_counter
-	sys.stdout.write("\033[100m \033[40m\r%i Target\033[0m" % request_counter)
 	print ("\n"+msg + " after %i requests" % request_counter)
+	sys.stdout.write("\033[100m \033[40m\r%i Target\033[0m" % request_counter)
 	sys.stdout.flush()
 	if status_code == 429:
 			printMsg("You have been throttled")
