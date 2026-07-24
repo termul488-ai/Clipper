@@ -33,14 +33,13 @@ class colors:
 attemps = 0
 os.system("clear")
 logo = """
-╔
-║
-║
+          ╔
+          ║
 ╔════════╗║╔╔════════╗╔════════╗╔════════╗╔════════
-║          ║║║         ║║         ║╚════════╝║
+║         ║║║         ║║         ║╚════════╝║
 ╚════════╝╝╝╚════════╝╚════════╝╚═══════╝╝ 
-              ║         ║
-              ╝         ╝
+          ║         ║
+          ╝         ╝
 """
 faded_text = fade.fire(logo)
 print(faded_text)
@@ -53,8 +52,8 @@ while attemps < 100:
     username = input("\033[32m┗> Enter your username: \033[0m")
     password = input("\033[32m┗> Enter your password: \033[0m")
 
-    if username == 'admin' and password == 'admin':
-        print("\033[100m \033[31m••> WELOCOME TO ZONA ADMIN HACK \033[0m")
+    if username == 'adm' and password == 'adm':
+        print("\033[100m \033[30m••> WELOCOME TO ZONA ADMIN HACK \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
