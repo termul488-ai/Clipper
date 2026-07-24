@@ -39,15 +39,12 @@ logo = """
 ║         ║║║        ║║        ║╚════════╝║
 ╚════════╝╝╝╚════════╝╚════════╝╚════════ ╝ 
             ║         ║
-            ╝         ╝
-"""
+            ╝         ╝"""
 faded_text = fade.fire(logo)
 print(faded_text)
 while attemps < 100:
-    print(f"\r\033[97m╔{'═' * 55}╗\033[0m")
-    print(f"\r\033[97m╚{'═' * 55}╝\033[0m")
+    print(f"\r\033[97m⬣{'━' * 50}⬣\033[0m")
 
-    
     print("\033[32m┏━━KunFayz━━⬣")
     username = input("\033[32m┗> Enter your username: \033[0m")
     password = input("\033[32m┗> Enter your password: \033[0m")
