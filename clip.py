@@ -43,7 +43,7 @@ logo = """
                      ╚╝         ╚╝            """
 faded_text = fade.fire(logo)
 print(faded_text)
-print(f"\r\033[33m  ⬣{'━' * 55}⬣\033[0m")
+print(f"\r\033[33m  ⬣{'━' * 58}⬣\033[0m")
 while attemps < 100:
     
     print("\033[32m┏━━KunFayz━━⬣")
