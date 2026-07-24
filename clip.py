@@ -43,7 +43,7 @@ logo = """
                      ╚╝         ╚╝            """
 faded_text = fade.fire(logo)
 print(faded_text)
-print(f"\r\033[33m  ⬣{'━' * 58}⬣\033[0m")
+print(f"\r\033[33m  ⬣{'━' * 60}⬣\033[0m")
 while attemps < 100:
     
     print("\033[32m┏━━KunFayz━━⬣")
@@ -112,7 +112,7 @@ def handleStatusCodes(status_code):
 	time.sleep(2)
 	global request_counter
 	sys.stdout.write("\033[38;5;39m[Req]\033[37m %i | " % request_counter)
-	print(f"\033[38;5;111mHost: \033[37m|\033[38;5;154m " +str(url)+ " \033[37m| \033[37mStatus: \033[38;5;220m| " +str(status_code)+ " |\033[0m")
+	print(f"\033[38;5;111mHost: \033[37m|\033[38;5;154m " +str(url)+ " \033[37m| \033[33mStatus: \033[38;5;220m| " +str(status_code)+ " |\033[0m")
 	sys.stdout.flush()
 	if status_code == 429:
 			printMsg("You have been throttled")
